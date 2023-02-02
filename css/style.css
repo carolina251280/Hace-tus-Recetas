@@ -1,0 +1,108 @@
+main {
+    background: url(../images/masa-galletas-navidad.jpg) no-repeat;
+    background-size: 100vw 90vh;
+}
+
+h1,
+h4,
+p {
+    color: white;
+}
+
+.texto {
+    width: 27%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10%;
+    left: 68%;
+}
+
+.title {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.387);
+}
+
+.title>img {
+    padding: 5px;
+}
+
+h1 {
+    font-size: 53px;
+    font-family: 'Dhellia', sans-serif;
+    line-height: 1.1em;
+    font-family: 'Handlee', cursive;
+    font-weight: 900;
+}
+
+h4 {
+    text-align: end;
+    font-family: 'Handlee', cursive;
+    font-style: italic;
+}
+
+p {
+    padding: 20px;
+    font-size: 19px;
+    justify-content: center;
+    text-align: justify;
+    /* font-style: italic; */
+    line-height: 1.2em;
+    /* font-family: 'Cakerolli Trial', sans-serif; */
+    font-family: 'Handlee', cursive;
+    font-weight: 700;
+}
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    left: 90%;
+    color: white;
+}
+
+footer>ul {
+    font-size: 24px;
+}
+
+
+
+footer ul i:hover {
+    color: rgb(255, 111, 1);
+    cursor: pointer;
+    
+}
+
+footer i {
+    padding: 5px;
+}
+
+.cartel:hover {
+    cursor: pointer;
+    -webkit-animation: 1s cartel 1;
+    -webkit-transform-origin: top center;
+}
+
+@-webkit-keyframes cartel {
+    20% {
+        -webkit-transform: rotate(15deg);
+    }
+
+    40% {
+        -webkit-transform: rotate(-10deg);
+    }
+
+    60% {
+        -webkit-transform: rotate(5deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(-3deg);
+    }
+
+
+}
