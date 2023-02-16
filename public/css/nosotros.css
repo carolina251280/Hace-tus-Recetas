@@ -3,7 +3,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(../images/fondo_cocina.jpeg);
+    background: url(../multimedia/fondo_cocina.jpeg);
 }
 
 .titulo{

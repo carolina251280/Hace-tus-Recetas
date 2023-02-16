@@ -9,7 +9,7 @@ main{
 }
 
 main .texto{
-    background: url(../images/fondo_cocina.jpeg);
+    background: url(../multimedia/fondo_cocina.jpeg);
     background-position: center;
     width: 90vw;
     height: 15vh;
@@ -32,7 +32,7 @@ main .texto{
     
 }
 .tarjetas .carta{
-    background: url(../images/fondo_cocina.jpeg); 
+    background: url(../multimedia/fondo_cocina.jpeg); 
     background-position: center;  
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ p{
 
 
 .sombra_movil{
-	-webkit-transform: translateX(0);
+	transform: translateX(0);
 }
 
 .sombra_movil:before{
@@ -88,28 +88,28 @@ p{
 		center, ellipse,
 		rgb(255, 143, 57) 0%,
 		rgba(101, 98, 98, 0) 80%);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 	opacity: 0;
 }
 
 .sombra_movil:hover{
-	-webkit-transform: translateY(-15px);
-	-webkit-animation: 1.5s movercaja infinite;	
+	transform: translateY(-15px);
+	animation: 1.5s movercaja infinite;	
 }
 
-@-webkit-keyframes movercaja{
+@keyframes movercaja{
 	50%{
 		-webkit-transform: translateY(-3px);
 	}
 }
 .sombra_movil:hover:before{
 	opacity: 0.4;
-	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
     opacity: 1;
-	-webkit-animation: 1.5s moversombra infinite;	
+	-animation: 1.5s moversombra infinite;	
 }
 
-@-webkit-keyframes moversombra{
+@keyframes moversombra{
 	50%{
 		opacity: 1;
 		-webkit-transform: translateY(3px);
