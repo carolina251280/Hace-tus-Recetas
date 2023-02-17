@@ -1,0 +1,401 @@
+main {
+    background: url(../images/fondo_cocina.jpeg);
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+
+
+}
+
+.imagen {
+    width: auto;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.imagen img {
+    width: 680px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: -3px 3px 8px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -3px 3px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -3px 3px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contain {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding-top: 20px;
+}
+
+.titulo {
+    padding: 5px 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(228, 219, 219, 0.577);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Dhellia', sans-serif;
+    line-height: 1.2em;
+    font-weight: 900;
+    color: rgb(255, 111, 1);
+
+}
+
+.flip-container {
+    width: 35vw;
+    height: 50.5vh;
+    perspective: 3000px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    padding-top: 10px;
+    background: rgba(230, 226, 224, 0.687);
+    font-weight: 900;
+    border: 2px solid rgb(255, 111, 1);
+    border-radius: 30px;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+.front ul {
+    font-size: 20px;
+    font-family: 'Handlee', cursive;
+    color: black;
+    justify-content: center;
+    align-content: center;
+    text-align: start;
+    padding-left: 20px;
+
+}
+
+.front ul input {
+    margin-top: 15px;
+}
+
+.back {
+    flex-direction: column;
+    font-size: 19px;
+    font-family: 'Handlee', cursive;
+    color: black;
+    justify-content: flex-start;
+    align-content: flex-start;
+    text-align: start;
+    transform: rotateY(180deg);
+    border: 2px solid rgb(11, 201, 11);
+}
+
+.card h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-family: 'Dhellia', sans-serif;
+    line-height: 1.2em;
+    font-weight: 900;
+}
+
+.front h1 {
+    color: rgb(255, 111, 1);
+
+
+}
+
+.back h1 {
+    color: rgb(11, 201, 11);
+
+}
+
+
+.back ul {
+    padding: 0px;
+}
+
+.back ul li {
+    list-style: circle;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.front img {
+    width: 120px;
+    height: 135px;
+    border-radius: 30px;
+    align-items: flex-start;
+    margin-right: 20%;
+    margin-left: 1%;
+    padding-bottom: 7px;
+}
+
+.flip-container p {
+    text-align: justify;
+    width: 85%;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    a,
+    .activo {
+        font-size: 14px;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: start;
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .front h1,
+    .back h1 {
+        font-size: 35px;
+    }
+
+    .front ul,
+    .back {
+        font-size: 22px;
+    }
+
+    .imagen {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 18px;
+
+    }
+
+    .imagen img {
+        width: 95%;
+
+        align-items: center;
+    }
+
+    .contain {
+        width: 95%;
+        height: auto;
+        align-items: center;
+    }
+
+    .flip-container {
+        width: 90%;
+
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+
+    a,
+    .activo {
+        font-size: 12px;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: start;
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .front h1,
+    .back h1 {
+        font-size: 35px;
+    }
+
+    .front ul,
+    .back {
+        font-size: 20px;
+    }
+
+    .imagen {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 18px;
+
+    }
+
+    .imagen img {
+        width: 90%;
+        align-items: center;
+    }
+
+    .contain {
+        width: 90%;
+        height: auto;
+        align-items: center;
+    }
+
+    .flip-container {
+        width: 90%;
+
+    }
+}
+
+
+@media screen and (min-width:360px) and (max-width:426px) {
+
+    a,
+    .activo {
+        font-size: 12px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .front h1,
+    .back h1 {
+        font-size: 35px;
+    }
+
+    .front ul,
+    .back {
+        font-size: 20px;
+    }
+
+    .imagen {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 18px;
+
+    }
+
+    .imagen img {
+        width: 90%;
+        height: auto;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .contain {
+        width: 90%;
+        height: auto;
+        align-items: center;
+        /* padding-top: 6.2em; */
+    }
+
+    .flip-container {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    a,
+    .activo {
+        font-size: 10px;
+
+    }
+
+    main {
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .front h1,
+    .back h1 {
+        font-size: 30px;
+    }
+
+    .front ul,
+    .back {
+        font-size: 18px;
+    }
+
+    .imagen {
+        display: flex;
+        width: 92%;
+        /* align-items: center; */
+        justify-content: center;
+        /* padding-top: 18px;
+     */
+    }
+
+    .imagen img {
+        width: 90%;
+        height: auto;
+        align-items: center;
+        /* margin: 10px 0;  */
+    }
+
+    .contain {
+        width: 90%;
+        height: auto;
+        align-items: center;
+        /* padding-top: 6.2em; */
+    }
+
+    .flip-container {
+        width: 95%;
+
+    }
+}

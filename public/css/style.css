@@ -1,0 +1,233 @@
+h1,
+h4,
+p {
+    color: white;
+}
+
+
+
+.title {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.387);
+}
+
+
+
+h1 {
+    font-family: 'Dhellia', sans-serif;
+    line-height: 1.1em;
+    font-family: 'Handlee', cursive;
+    font-weight: 900;
+}
+
+h4 {
+    text-align: end;
+    font-family: 'Handlee', cursive;
+    font-style: italic;
+}
+
+p {
+    padding: 20px;
+    justify-content: center;
+    text-align: justify;
+    line-height: 1.2em;
+    font-family: 'Handlee', cursive;
+    font-weight: 700;
+}
+
+footer {
+    position: absolute;
+    color: white;
+
+
+}
+
+footer ul i:hover {
+    color: rgb(255, 111, 1);
+    cursor: pointer;
+}
+
+footer>ul {
+    font-size: 24px;
+}
+
+
+footer i {
+    padding: 5px;
+}
+
+.cartel:hover {
+    cursor: pointer;
+    animation: 1s cartel 1;
+    transform-origin: top center;
+}
+
+@keyframes cartel {
+    20% {
+        -webkit-transform: rotate(15deg);
+    }
+
+    40% {
+        -webkit-transform: rotate(-10deg);
+    }
+
+    60% {
+        -webkit-transform: rotate(5deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(-3deg);
+    }
+
+}
+
+
+@media screen and (min-width: 1439px) {
+
+    main {
+        background: url(../multimedia/fondo\ principal.jpg) no-repeat;
+        background-size: cover;
+
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    .texto {
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 10%;
+        left: 67%;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    footer {
+        left: 92%;
+        top: 90%;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1438px) {
+
+    main {
+        background: url(../multimedia/fondo\ principal.jpg) no-repeat;
+        background-size: cover;
+
+    }
+
+    .texto {
+        width: 27%;
+    }
+
+    h1 {
+        font-size: 53px;
+    }
+
+    .texto {
+        width: 27%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 10%;
+        left: 68%;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    footer {
+        left: 90%;
+        bottom: 1%;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        background: url(../multimedia/pantalla\ chica.jpg) no-repeat;
+        background-size: cover;
+
+    }
+
+    h1 {
+        font-size: 120px;
+    }
+
+    .texto {
+        width: 55%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 10%;
+        left: 25%;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    footer {
+        left: 86%;
+        top: 90%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+    main {
+        background: url(../multimedia/pantalla\ chica.jpg) no-repeat;
+        background-size: cover;
+
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .texto {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 10%;
+        left: 15%;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    footer {
+        color: white;
+        left: 76%;
+        top: 90%;
+    }
+
+    footer ul i:hover {
+        color: rgb(255, 111, 1);
+        cursor: pointer;
+
+    }
+}

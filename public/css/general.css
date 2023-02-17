@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.991);
+    align-items: center;
+    justify-content: center;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+
+}
+
+a,
+.activo {
+    color: black;
+    font-family: 'Cakerolli Trial', sans-serif;
+    font-size: 14px;
+    width: 25vw;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.activo,
+a li:hover {
+    background: orangered;
+    color: rgb(255, 255, 255);
+}
+
+header .logo {
+    margin-top: 1vh;
+}
+
+main {
+    width: 100vw;
+    height: 89vh;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+
+    header {
+        width: 98.9vw;
+        height: 8vh;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    header {
+        width: 99vw;
+        height: 12vh;
+    }
+
+    header nav {
+        height: 15vh;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    header {
+        width: 98vw;
+        height: 7vh;
+    }
+
+    header nav {
+        height: 15vh;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    header {
+        width: 97vw;
+        height: 8vh;
+    }
+
+    header nav {
+        height: 10vh;
+    }
+
+}
