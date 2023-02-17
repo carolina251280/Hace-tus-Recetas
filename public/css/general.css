@@ -57,9 +57,9 @@ main {
         height: 8vh;
     }
 
-   
- 
-    
+
+
+
 
 }
 
@@ -79,7 +79,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     header {
-        width: 90vw;
+        width: 98vw;
         height: 7vh;
     }
 
@@ -93,7 +93,7 @@ main {
 @media screen and (max-width: 767px) {
 
     header {
-        width: 96vw;
+        width: 97vw;
         height: 8vh;
     }
 

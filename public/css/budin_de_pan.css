@@ -21,7 +21,7 @@ main {
     box-shadow: -3px 3px 8px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -3px 3px 8px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -3px 3px 8px 0px rgba(0, 0, 0, 0.75);
-  }
+}
 
 .contain {
     width: 35%;
@@ -41,18 +41,18 @@ main {
     flex-direction: column;
     background-color: rgba(228, 219, 219, 0.577);
     margin-top: 20px;
-  }
-  
+}
 
 
- .titulo h1 {
+
+.titulo h1 {
     font-size: 50px;
     font-family: 'Dhellia', sans-serif;
     line-height: 1.2em;
     font-weight: 900;
     color: rgb(255, 111, 1);
-    
-  }
+
+}
 
 
 .flip-container {
@@ -126,7 +126,7 @@ main {
     text-align: start;
     transform: rotateY(180deg);
     border: 2px solid rgb(11, 201, 11);
-  }
+}
 
 .card h1 {
     display: flex;
@@ -138,15 +138,16 @@ main {
     font-weight: 900;
 }
 
-.front h1{
+.front h1 {
     color: rgb(255, 111, 1);
 
 
-  }
-  .back h1 {
+}
+
+.back h1 {
     color: rgb(11, 201, 11);
 
-  }
+}
 
 
 .back ul {
@@ -179,3 +180,238 @@ main {
     padding-right: 20px;
 }
 
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    a,
+    .activo {
+        font-size: 14px;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: start;
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .front h1,
+    .back h1 {
+        font-size: 35px;
+    }
+
+    .front ul {
+        font-size: 22px;
+    }
+
+    .back {
+        font-size: 16px;
+    }
+
+    .imagen {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 18px;
+
+    }
+
+    .imagen img {
+        width: 95%;
+
+        align-items: center;
+    }
+
+    .contain {
+        width: 95%;
+        height: auto;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .flip-container {
+        width: 90%;
+
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+
+    a,
+    .activo {
+        font-size: 12px;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: start;
+        width: 95vw;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .front h1,
+    .back h1 {
+        font-size: 35px;
+    }
+
+    .front ul {
+        font-size: 20px;
+    }
+
+    .back {
+        font-size: 14.5px;
+    }
+
+    .imagen {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 18px;
+
+    }
+
+    .imagen img {
+        width: 90%;
+        align-items: center;
+    }
+
+    .contain {
+        width: 95%;
+        height: auto;
+        align-items: center;
+    }
+
+    .flip-container {
+        width: 95%;
+
+    }
+}
+
+
+@media screen and (min-width:360px) and (max-width:426px) {
+
+    a,
+    .activo {
+        font-size: 12px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .front h1,
+    .back h1 {
+        font-size: 35px;
+    }
+
+    .front ul {
+        font-size: 20px;
+    }
+
+    .back {
+        font-size: 14px;
+    }
+
+    .imagen {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 18px;
+
+    }
+
+    .imagen img {
+        width: 90%;
+        height: auto;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .contain {
+        width: 90%;
+        height: auto;
+        align-items: center;
+        /* padding-top: 6.2em; */
+    }
+
+    .flip-container {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    a,
+    .activo {
+        font-size: 10px;
+
+    }
+
+    main {
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: center;
+
+
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .front h1,
+    .back h1 {
+        font-size: 30px;
+    }
+
+    .front ul {
+        font-size: 18px;
+    }
+
+    .back {
+        font-size: 12px;
+    }
+
+    .imagen {
+        display: flex;
+        width: 92%;
+        /* align-items: center; */
+        justify-content: center;
+        /* padding-top: 18px;
+     */
+    }
+
+    .imagen img {
+        width: 90%;
+        height: auto;
+        align-items: center;
+        /* margin: 10px 0;  */
+    }
+
+    .contain {
+        width: 90%;
+        height: auto;
+        align-items: center;
+        /* padding-top: 6.2em; */
+    }
+
+    .flip-container {
+        width: 95%;
+
+    }
+}
