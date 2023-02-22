@@ -64,13 +64,13 @@ textarea {
 .enviar {
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: relative;
     background: white;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-family: 'Handlee', cursive;
     font-weight: bold;
     text-align: center;
-    margin-top: 260px;
+    /* margin-top: 260px; */
     padding: 10px 40px;
     box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 1);
     -webkit-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 1);
